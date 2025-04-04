@@ -45,6 +45,6 @@ A modern take on the classic Snake game built with Python’s Tkinter GUI librar
 Make sure you have Python 3.x installed. Then:
 
 ```bash
-git clone https://github.com/yourusername/snake-game-tkinter.git
+git clone https://github.com/AmandeepSingh-Saluja/Snake-Game-in-Python-with-Tkinter.git
 cd snake-game-tkinter
 python main.py
