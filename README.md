@@ -35,8 +35,9 @@ A modern take on the classic Snake game built with Python’s Tkinter GUI librar
 
 ![Image](https://github.com/user-attachments/assets/1cef58b3-3fb4-445a-a399-01e569f44d94)
 ![Image](https://github.com/user-attachments/assets/cd4f2678-1373-477a-842e-6cdc60b617f9)
+![Image](https://github.com/user-attachments/assets/c74172da-381b-432c-b1f7-d4f236b146be)
 ![Image](https://github.com/user-attachments/assets/e31ab76b-1be8-4316-bfa9-e4935409f748)
-![Image](https://github.com/user-attachments/assets/3c0d7952-ebf2-46dd-9d46-ae808bad20d3)
+![Image](https://github.com/user-attachments/assets/f100f946-a0f9-40d6-b5ec-91708171f6dc)
 ---
 
 ## 🛠️ How to Run
