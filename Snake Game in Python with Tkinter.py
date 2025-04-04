@@ -4,7 +4,7 @@ import os
 
 # Constants
 GAME_WIDTH = 700
-GAME_HEIGHT = 600
+GAME_HEIGHT = 500
 SPEED = 120
 SPACE_SIZE = 60
 BODY_PARTS = 3
@@ -86,11 +86,15 @@ class SnakeGame:
 
     def game_over(self):
         self.canvas.create_text(GAME_WIDTH / 2, GAME_HEIGHT / 2, font=('consolas', 50),
-                                text="GAME OVER", fill="red", tag="gameover")
+                            text="GAME OVER", fill="red", tag="gameover")
         self.save_score()
         self.restart_button = Button(self.master, text="Restart", font=('consolas', 20),
-                                     command=self.restart)
+                                 command=self.restart)
         self.restart_button.pack(pady=10)
+        self.menu_button = Button(self.master, text="Return to Main Menu", font=('consolas', 20),
+                              command=self.return_to_menu)
+        self.menu_button.pack(pady=10)
+
 
     def restart(self):
         self.canvas.delete("all")
@@ -99,11 +103,19 @@ class SnakeGame:
         self.direction = 'down'
         if hasattr(self, 'restart_button'):
             self.restart_button.destroy()
+        if hasattr(self, 'menu_button'):
+            self.menu_button.destroy()
         self.start_game()
+
 
     def save_score(self):
         with open(LEADERBOARD_FILE, "a") as f:
             f.write(f"{self.username}:{self.score}\n")
+            
+    def return_to_menu(self):
+        self.master.destroy()
+        launch_menu(self.username)
+
 
 
 class Snake:
